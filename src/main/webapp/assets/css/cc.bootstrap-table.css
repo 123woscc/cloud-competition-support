@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+}
+.table {
+    margin-bottom: 20px;
+    width: 600px;
+}
+.table th, .table td {
+    border-top: 1px solid #dddddd;
+    line-height: 20px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+.table th {
+    font-weight: bold;
+}
+.table thead th {
+    vertical-align: bottom;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+
+.table tbody tr.success > td {
+    background-color: #dff0d8;
+}
+.table tbody tr.error > td {
+    background-color: #f2dede;
+}
+.table tbody tr.warning > td {
+    background-color: #fcf8e3;
+}
+.table tbody tr.info > td {
+    background-color: #d9edf7;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.seu.cloud.dao.MailInfoDao">
+    <insert id="insertMailInfo">
+        replace INTO mailinfo (uid, name, telephone, backlog, address) VALUES
+        (#{uid}, #{name}, #{telephone}, #{backlog}, #{address})
+    </insert>
+
+    <select id="selectMailInfoByUid" resultType="cn.edu.seu.cloud.domain.MailInfo">
+        SELECT uid, name, telephone, backlog, address
+        FROM mailinfo
+        WHERE uid = #{uid}
+    </select>
+
+    <select id="selectAllMailInfo" resultType="cn.edu.seu.cloud.domain.MailInfo">
+        SELECT uid, name, telephone, backlog, address
+        FROM mailinfo
+    </select>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.seu.cloud.dao.AwdDao">
+    <insert id="addAwdInfo">
+        replace INTO awarding (id, username, idnum, accountName, accountNumber, coupletNumber, telephone)
+        VALUES (#{id}, #{username}, #{idnum}, #{accountName}, #{accountNumber}, #{coupletNumber}, #{telephone})
+    </insert>
+    <select id="selectAllAwd" resultType="cn.edu.seu.cloud.domain.Awd">
+        SELECT id, username, idnum, accountName, accountNumber, coupletNumber, telephone
+        FROM awarding
+     </select>
+    <select id="selectAwdById" resultType="cn.edu.seu.cloud.domain.Awd">
+        SELECT id, username, idnum, accountName, accountNumber, coupletNumber, telephone
+        FROM awarding
+        WHERE id = #{id}
+    </select>
+</mapper>

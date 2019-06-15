@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* Header Start ... */
+#header-top {
+	width: 100%;
+	height: 10px;
+	background-color: #ea5532;
+}
+#header-logo {
+	height: 200px;
+	width: 500px;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+}
+#header-code {
+	height: 200px;
+	width: 200px;
+	background-image: url(../img/code.png);
+	background-repeat: no-repeat;
+	margin-right: 40px;
+}
+/* Header End ... */
+
+/* Menu Start ...*/
+#menu {
+	width: auto;
+	height: 50px;
+	background-color: #ea5532;
+}
+#menu-container {
+	position: relative;
+	width: auto;
+	height: auto;
+	background-color: #ea5532;
+	margin-top: 10px;
+	*margin-top: 0;
+	_margin-top: 0;
+	border-radius: 3px;
+	z-index: 9999;
+}
+#menu ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#menu li {
+	height: 48px;
+	line-height: 48px;
+	display: inline-block;
+	*zoom:1;
+	*display:inline;
+	_zoom:1;
+	_display:inline;
+	vertical-align: middle;
+	font-size: 20px;
+	list-style: none;
+	margin: 0 40px 0 0;
+	padding: 0;
+	border-style: solid;
+	border-color: transparent;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 2px;
+}
+#menu li a {
+	position: relative;
+	z-index: 10000;
+	color: #fff;
+	text-decoration: none;
+}
+#menu .selected {
+	border-color: #fff;
+}
+/* Menu End ...*/

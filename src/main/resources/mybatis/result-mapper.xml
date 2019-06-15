@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.seu.cloud.dao.ResultDao">
+    <insert id="insertResult">
+      replace INTO result (id, workname, school, teacher, leader, labman1, labman2, labman3, category, grade, award, money)
+      VALUES (#{id}, #{workname}, #{school}, #{teacher}, #{leader}, #{labman1}, #{labman2}, #{labman3}, #{category}, #{grade}, #{award}, #{money})
+    </insert>
+
+    <select id="selectResultByTeamName" resultType="cn.edu.seu.cloud.domain.Result">
+        SELECT id, workname, school, teacher, leader, labman1, labman2, labman3, category, grade, award, money
+        FROM result
+        WHERE workname = #{team}
+    </select>
+
+    <select id="selectResultByUid" resultType="cn.edu.seu.cloud.domain.Result">
+        SELECT id, workname, school, teacher, leader, labman1, labman2, labman3, category, grade, award, money
+        FROM result
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectResultsByTeamId" resultType="cn.edu.seu.cloud.domain.Result">
+        SELECT r.id, r.workname, r.school, r.teacher, r.leader, r.labman1, r.labman2, r.labman3, r.category, r.grade, r.award, r.money
+        FROM result r, userWorker uw
+        WHERE uw.teamId = #{teamId} and SUBSTRING(uw.workId, -4) = r.id
+    </select>
+</mapper>

@@ -1,0 +1,97 @@
+#center-container {
+	background-color: #4d4398;
+	min-height: 500px;
+}
+#center-menu {
+	float: left;
+}
+#center-menu ul{
+	margin-left: 20px;
+	margin-top: 50px;
+	width: 130px;
+}
+#center-menu li {
+	height: 40px;
+	margin-bottom: 40px;
+	border-style: solid;	
+	border-width: 0 0 1px 0;
+	border-color: #fff;
+}
+#center-menu li a {
+	margin-left: 20px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#center-menu .odd, #center-menu .odd a {
+	color: #fdd23f;
+}
+#center-menu .even, #center-menu .even a {
+	color: #00b9ef;
+}
+#center-menu .odd a:hover {
+	color: #f2fd3d;
+}
+#center-menu .even a:hover {
+	color: #00cdd4;
+}
+#center-inner-container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#center-context-container {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0 0 0 0;
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	opacity:0.9;
+	min-height: 480px;
+	width: 75%;
+	float: right;
+}
+#center-context-container h1 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #909090;
+}
+#center-context-container hr {
+	height: 1px;
+	border: 0;
+	border-bottom: 2px solid #909090;
+}
+
+.result_text {
+    font-family: 'Microsoft YaHei', SimHei;
+    font-size: medium;
+    line-height: normal;
+    text-align: center;
+}
+
+.final_result {
+    width: 520px;
+    height: 400px;
+    margin: 50px auto 0;
+}
+
+.final_result table {
+    margin: 16px auto 0;
+}
+.final_result td {
+    padding: 5px;
+}
+
+.final_result .table_td {
+    width: 100px;
+}
+
+.result_title {
+    width: 400px;
+    margin: 70px auto 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.final_result_text {
+    text-align: left;
+}

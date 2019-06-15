@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* Common Start ...*/
+body {
+	text-align: center;
+	font-family:"Microsoft YaHei", SimHei;
+}
+.wrapper {
+	width: 1000px;
+	margin: auto;
+	text-align: left;
+}
+.large-top-gap {
+	margin-top: 60px;
+}
+.top-gap {
+	margin-top: 50px;
+}
+.nano-top-gap {
+	margin-top: 20px;
+}
+.bottom-gap {
+	margin-bottom: 50px;
+}
+.nano-bottom-gap {
+	margin-bottom: 20px;
+}
+.left-gap {
+	margin-left: 50px;
+}
+.nano-left-gap {
+	margin-left: 20px;
+}
+.nano-right-gap {
+	margin-right: 20px;
+}
+.container {
+	margin-left: 52px;
+	min-height: 400px;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.inline-block {
+	display: inline-block;
+	*zoom:1;
+	*display:inline;
+	_zoom:1;
+	_display:inline;
+	vertical-align: middle;
+}
+.center {
+	text-align: center;
+}
+.main-color {
+	color: #4d4398;
+}
+/* Common End ...*/
